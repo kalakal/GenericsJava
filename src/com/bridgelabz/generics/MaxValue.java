@@ -1,31 +1,16 @@
 package com.bridgelabz.generics;
 
-    public class MaxValue<K extends Comparable<K>> {
+public class MaxValue {
 
-        K var1;
-        K var2;
-        K var3;
+    public void maxInt(Integer val1, Integer val2, Integer val3){
 
-        public MaxValue(K var1, K var2, K var3) {
-            this.var1 = var1;
-            this.var2 = var2;
-            this.var3 = var3;
-        }
+        if((val1.compareTo(val2)) >= 0 && (val1.compareTo(val3)) >= 0)
+            System.out.println("First Value: " + val1 + " is largest\n");
 
-        public void testMaximum(){
-            testMaximum(var1, var2, var3);
-        }
+        else if ((val2.compareTo(val1)) >= 0 && (val2.compareTo(val3)) >= 0)
+            System.out.println("Second Value: " + val2 + " is largest\n");
 
-        static <K extends Comparable<K>> void testMaximum(K val1, K val2, K val3){
-
-            if((val1.compareTo(val2)) >= 0 && (val1.compareTo(val3)) >= 0)
-                System.out.println(val1 + " is largest\n");
-
-            else if ((val2.compareTo(val1)) >= 0 && (val2.compareTo(val3)) >= 0)
-                System.out.println(val2 + " is largest\n");
-
-            else
-                System.out.println(val3 + " is largest");
-        }
+        else
+            System.out.println("Third Value: " + val3 + " is largest");
     }
-
+}
