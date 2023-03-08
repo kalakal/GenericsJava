@@ -1,8 +1,7 @@
 package com.bridgelabz.generics;
 
 public class MaxValue {
-
-    public void maxInt(Integer val1, Integer val2, Integer val3){
+    void maxFloat(Float val1, Float val2, Float val3){
 
         if((val1.compareTo(val2)) >= 0 && (val1.compareTo(val3)) >= 0)
             System.out.println("First Value: " + val1 + " is largest\n");

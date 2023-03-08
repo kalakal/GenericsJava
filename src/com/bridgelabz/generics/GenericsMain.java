@@ -4,15 +4,15 @@ public class GenericsMain {
     public static void main(String[] args) {
         System.out.println("|-- Generics Max Value Program --|");
 
-        MaxValue maxInt = new MaxValue();
+        MaxValue maxVal = new MaxValue();
 
         System.out.println("\nTest Case 1:");
-        maxInt.maxInt(93, 54, 64);
+        maxVal.maxFloat(93.6F, 54.54F, 64.43F);
 
         System.out.println("Test Case 2:");
-        maxInt.maxInt(54, 88, 64);
+        maxVal.maxFloat(54.43F, 88.65F, 64.43F);
 
         System.out.println("Test Case 3:");
-        maxInt.maxInt(54, 64, 80);
+        maxVal.maxFloat(54.33F, 64.45F, 80.76F);
     }
 }
