@@ -7,12 +7,12 @@ public class GenericsMain {
         MaxValue maxVal = new MaxValue();
 
         System.out.println("\nTest Case 1:");
-        maxVal.maxFloat(93.6F, 54.54F, 64.43F);
+        maxVal.maxString("Peach", "Apple", "Banana");
 
         System.out.println("Test Case 2:");
-        maxVal.maxFloat(54.43F, 88.65F, 64.43F);
+        maxVal.maxString("Peach", "Apple", "Banana");
 
         System.out.println("Test Case 3:");
-        maxVal.maxFloat(54.33F, 64.45F, 80.76F);
+        maxVal.maxString("Peach", "Apple", "Banana");
     }
 }
