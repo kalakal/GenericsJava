@@ -7,12 +7,32 @@ public class GenericsMain {
         MaxValue maxVal = new MaxValue();
 
         System.out.println("\nTest Case 1:");
-        maxVal.maxString("Peach", "Apple", "Banana");
+        maxVal.maxValue(93, 54, 64);
 
         System.out.println("Test Case 2:");
-        maxVal.maxString("Peach", "Apple", "Banana");
+        maxVal.maxValue(54, 88, 64);
 
         System.out.println("Test Case 3:");
-        maxVal.maxString("Peach", "Apple", "Banana");
+        maxVal.maxValue(54, 64, 80);
+
+
+        System.out.println("\nTest Case 1:");
+        maxVal.maxValue(93.6F, 54.54F, 64.43F);
+
+        System.out.println("Test Case 2:");
+        maxVal.maxValue(54.43F, 88.65F, 64.43F);
+
+        System.out.println("Test Case 3:");
+        maxVal.maxValue(54.33F, 64.45F, 80.76F);
+
+
+        System.out.println("\nTest Case 1:");
+        maxVal.maxValue("Peach", "Apple", "Banana");
+
+        System.out.println("Test Case 2:");
+        maxVal.maxValue("Apple", "Peach", "Banana");
+
+        System.out.println("Test Case 3:");
+        maxVal.maxValue("Apple", "Banana", "Peach");
     }
 }
